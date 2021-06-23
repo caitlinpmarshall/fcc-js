@@ -1,0 +1,14 @@
+let username = "JackOfAllTrades";
+let userCheck = /^[A-Za-z][A-Za-z]+\d*$|^[A-Za-z]\d\d+$/ // Change this line
+let result = userCheck.test(username);
+console.log(result);
+
+//sketching:
+//only alphanum = NOT opposite of alphanum -> ^\W
+//no start with number -> ^[\D]
+//any numbers ONLY at end -> [^.\d.]
+//ok to have 0 or more numbers at the end -> .\d*
+//solution: gah, just missing the $ to say 'end'!
+//lower and upper okay -> i
+//at least two characters long -> [^\W]+?[^\W]+
+//solution: set up an 'or' to account for just letters OR a letter then numbers
