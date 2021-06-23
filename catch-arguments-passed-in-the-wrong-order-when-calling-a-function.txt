@@ -1,0 +1,13 @@
+function raiseToPower(b, e) {
+  return Math.pow(b, e);
+}
+
+let base = 2;
+let exp = 3;
+let power = raiseToPower(base, exp);
+console.log(power);
+
+let backward = raiseToPower(exp, base);
+console.log(backward);
+
+//supply all required arguments, and in the correct order
