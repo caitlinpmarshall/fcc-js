@@ -1,0 +1,12 @@
+let myNestedArray = [
+  // Only change code below this line
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  ['loop', [3, 'deep', [4, 'deeper', [5, 'deepest']]],'shift', 6, 7, 1000, 'method'],
+  ['concat', false, true, 'spread', 'array'],
+  ['mutate', 1327.98, 'splice', 'slice', 'push'],
+  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
+  // Only change code above this line
+];
+console.log(myNestedArray[1][1][2][2][1]);
+//this means: go to the second item in the whole array 'myNestedArray', and inside THAT go to the second item, and inside THAT go to the third item, and inside THAT go to the third item, and inside THAT, finally go to the second item
+//to access the depths of nested arrays, simply tag on more and more indexes
