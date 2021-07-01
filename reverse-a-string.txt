@@ -1,0 +1,11 @@
+function reverseString(str) {
+  const spread = [...str];
+  const flip = [];
+  for (let i = spread.length -1; i >= 0; i--) {
+    flip.push(spread[i]);
+  };
+  const stringed = flip.join("");
+  return stringed;
+}
+
+console.log(reverseString("socks"));
