@@ -2,10 +2,10 @@ function reverseString(str) {
   const spread = [...str];
   const flip = [];
   for (let i = spread.length -1; i >= 0; i--) {
-    flip.push(spread[i]);
-  };
-  const stringed = flip.join("");
-  return stringed;
+    flip.push(spread[i])
+  }
+  const joined = flip.join("");
+  return joined;
 }
 
-console.log(reverseString("socks"));
+console.log(reverseString("noodle"));

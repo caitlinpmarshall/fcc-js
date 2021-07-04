@@ -1,0 +1,15 @@
+function findLongestWordLength(str) {
+  let split = str.split(" ");
+  //console.log(split);
+  let lengths = [];
+  for (let word of split) {
+    //console.log(word.length);
+    lengths.push(word.length);
+    //console.log(lengths);
+  }
+  return Math.max(...lengths);
+}
+
+console.log(findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"));
+
+//nearly had it, but had to check the hints to remember that Math.max requires a spread operator 
