@@ -1,0 +1,10 @@
+function confirmEnding(str, target) {
+  const stringEnd = str.substring(str.length - target.length);
+  //return stringEnd;
+  if (stringEnd === target) {
+    return true;
+  }
+  return false;
+}
+
+console.log(confirmEnding("Abstraction", "action"));
