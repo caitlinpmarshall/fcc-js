@@ -1,0 +1,19 @@
+function titleCase(str) {
+    //split string into array of words
+  const sentenceArr = str.split(" ");
+  const newSentenceArr = [];
+  //for each word, cut again into array of first letter, remaining letters,
+  for (let word of sentenceArr) {
+    const lowerWord = word.toLowerCase();   
+  //firstLetter.toUpperCase
+  //remainingLetters.toLowerCase
+    const capped = lowerWord.charAt(0).toUpperCase() + lowerWord.slice(1)
+    console.log(capped);
+    newSentenceArr.push(capped);
+  }
+  //join
+  const result = newSentenceArr.join(" ");
+  return result;
+}
+
+console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"));
