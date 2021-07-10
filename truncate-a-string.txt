@@ -1,0 +1,10 @@
+function truncateString(str, num) {
+  if (str.length > num) {
+    const trimmed = [str.slice(0, num)];
+    trimmed.push("...");
+    return trimmed.join("");
+  }
+  return str;
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length+2));
