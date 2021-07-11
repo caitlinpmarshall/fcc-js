@@ -1,0 +1,31 @@
+function frankenSplice(arr1, arr2, n) {
+  const franken = [];
+  for (let i=0; i<n; i++) {
+    franken.push(arr2[i]);
+  }
+
+  for (let i=0; i<arr1.length; i++) {
+    franken.push(arr1[i])
+  }
+
+  for (let i=n; i<arr2.length; i++) {
+    franken.push(arr2[i])
+  }
+  return franken;
+}
+
+console.log(frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2));
+
+/* 
+  const newArr1 = arr1.slice();
+  console.log(newArr1)
+  const startArr2 = arr2.slice(0,n);
+  console.log(startArr2)
+  const endArr2 = arr2.slice(n,arr2.length)
+  console.log(endArr2);
+  const franken = [];
+  franken.push(startArr2);
+  return franken;
+
+  my solution didn't actually use any slice or splice, and it is a bit more verbose than the given answers...but it works! And it follows a pretty clear logic.
+*/

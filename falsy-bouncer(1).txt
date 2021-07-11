@@ -1,0 +1,29 @@
+function bouncer(arr) {
+  const cleanArray = [];
+  for (let item of arr) {
+    const booled = !!item;
+    if (booled) {
+      cleanArray.push(item);
+    }
+  }
+  return cleanArray;
+}
+
+console.log(bouncer([7, "ate", 0, false, 9]));
+
+/*
+  const cleanArr = []
+
+  for (let i=0; i<arr.length; i++) {
+    !!arr[i]
+  }
+
+  for (let i=0; i<arr.length; i++) {
+    if (arr[i] === true) {
+      cleanArr.push(arr[i]);
+    }
+  }
+  return cleanArr;
+
+
+*/
