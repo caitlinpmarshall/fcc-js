@@ -1,0 +1,49 @@
+function chunkArrayInGroups(arr, size) {
+  let chunky = [];
+  while (arr.length > 0) {
+    chunky.push(arr.splice(0, size))
+  }
+  return chunky;
+}
+  
+
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 4) );
+
+
+/*
+  const lilChunk = arr.slice(0, size);
+  console.log(lilChunk);
+
+  let x = 1;
+  let y = 2;
+
+  while ((size * y) < arr.length) {
+    const nextChunk = arr.slice(size*x, size*y);
+    console.log(nextChunk)
+    x++;
+    y++;
+    //console.log(x, y);
+
+  const thirdChunk = arr.slice(size*2, size*3);
+  console.log(thirdChunk);
+  const fourthChunk = arr.slice(size*3, size*4)
+  console.log(fourthChunk);
+  const fifthChunk = arr.slice(size*4, size*5)
+  console.log(fifthChunk);
+*/
+
+
+
+/*
+  const chunky = [];
+  const firstChunk =[];
+  let i = 0;
+  while (i < size){
+    firstChunk.push(arr[i]);
+    i++;
+  }
+  return firstChunk;
+  const secondChunk = 
+  //if (){}
+
+*/
