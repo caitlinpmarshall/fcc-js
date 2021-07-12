@@ -1,0 +1,13 @@
+function getIndexToIns(arr, num) {
+  //sort array lowest to largest
+  arr.sort(function(a, b){return a-b})
+  //iterate through array; if num is greater than item, insert here
+  let i = 0;
+  while (num > arr[i]) {
+    i++;
+  }
+  //return that item's index
+  return i;
+}
+
+console.log(getIndexToIns([2, 5, 10], 15));

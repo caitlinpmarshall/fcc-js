@@ -1,0 +1,23 @@
+function mutation(arr) {
+  const firstLower = arr[0].toLowerCase();
+  const secondLower = arr[1].toLowerCase();
+  const firstTally = [];
+  //console.log(secondLower.length);
+
+  for (let letter of secondLower) {
+    //console.log(letter)
+    if (firstLower.includes(letter)) {
+      firstTally.push(letter)
+    }
+  }
+  //console.log(firstTally.length);
+  if (firstTally.length === secondLower.length) {
+    return true;
+  }
+  return false;
+}
+
+console.log(mutation(["Noel", "Ole"]) );
+
+
+
