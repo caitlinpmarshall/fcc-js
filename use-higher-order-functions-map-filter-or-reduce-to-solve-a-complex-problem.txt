@@ -1,0 +1,25 @@
+const squareList = arr => {
+  // Only change code below this line
+
+  //only positive
+  const positives = arr.filter(item => item > 0);
+  //console.log(positives)
+
+  //only integers
+  const integers = positives.filter(item => Number.isInteger(item));
+  //console.log(integers)
+
+
+  //square 'em
+  const squares = integers.map(item => Math.pow(item, 2))
+  //console.log(squares)
+
+
+  return squares;
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
+
+//This is certainly more verbose than the hint explanations, but it does get us to the right answer, and it's clearly spelled out.  Worth diving back into to explore chaining further
