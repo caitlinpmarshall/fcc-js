@@ -1,0 +1,28 @@
+// Only change code below this line
+function urlSlug(title) {
+  const re = /\s+/;
+  const arrayedSlug = title.toLowerCase().trim().split(re);
+
+
+  const joinedSlug = arrayedSlug.join("-");
+  return joinedSlug;
+}
+
+console.log(urlSlug(" Winter Is   Coming"));
+// Only change code above this line
+
+/* function urlSlug(title) {
+  const arrayedSlug = title.toLowerCase().trim().split(" ");
+  for (let word of arrayedSlug) {
+    const trimmedSlug = [];
+    if (word !== " ") {
+      trimmedSlug.push(word);
+    }
+    return trimmedSlug;
+  }
+
+  const joinedSlug = arrayedSlug.join("-");
+  
+}
+
+console.log(urlSlug(" Winter Is   Coming")); */
