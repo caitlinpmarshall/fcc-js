@@ -1,0 +1,33 @@
+function sumAll(arr) {
+  //flip so lowest first
+  const lowToHigh = arr.sort((a, b) => a - b);
+  console.log(lowToHigh);
+  //loop through to add all
+  let num = lowToHigh[0];
+  let allValues = [];
+  while (num <= lowToHigh[1]) {
+    allValues.push(num);
+    num++;
+  };
+  console.log(allValues);
+  const sum = allValues.reduce( (sum, num) => sum +num );
+  return sum;
+}
+
+console.log(sumAll([10, 5]));
+
+  //flip so lowest first
+  //loop through to add all
+  //or maybe there is a built in function for n!
+
+  /*
+  function sumAll(arr) {
+  //flip so lowest first
+  const lowToHigh = arr.sort((a, b) => a - b);
+  //loop through to add all
+  const sum = lowToHigh.reduce( (sum, num) => sum + num);
+  //or maybe there is a built in function for n!
+  return sum;
+}
+  
+  */
